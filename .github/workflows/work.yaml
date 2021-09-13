@@ -1,0 +1,37 @@
+name: Send Love Mail
+
+on:
+  repository_dispatch:
+  release:
+    types: published
+  schedule:
+    - cron: 4 5 * * *
+  watch:
+    types: started
+    
+env:
+  YS_STARTDAY: ${{ secrets.YS_STARTDAY }}
+  YS_MARRYDAY: ${{ secrets.YS_MARRYDAY }}
+  YS_LOCAL: ${{ secrets.YS_LOCAL }}
+  YS_FROM_EMAIL: ${{ secrets.YS_FROM_EMAIL }}
+  YS_FROM_EMAIL_PWD: ${{ secrets.YS_FROM_EMAIL_PWD }}
+  YS_TO_EMAIL: ${{ secrets.YS_TO_EMAIL }}
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout codes
+              uses: actions/checkout@v2
+              
+            - name: Use Node.js
+              uses: actions/setup-node@v1
+              with:
+                node-version: '12.x'
+                
+            - name: Run install
+              run: npm install
+              
+            - name: Run Script
+              run: node main.js
