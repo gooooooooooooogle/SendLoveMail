@@ -39,8 +39,8 @@ let EmailSubject = "一封暖暖的小邮件";
 
 // 爬取数据的url
 const OneUrl = "http://wufazhuce.com/";
-// const WeatherUrl = "https://tianqi.moji.com/weather/china/" + local;
-const WeatherUrl = "http://tianqi.moji.com/";
+const WeatherUrl = "https://tianqi.moji.com/weather/china/" + local;
+// const WeatherUrl = "http://tianqi.moji.com/";
 
 let OneDayUrl = 'http://sentence.iciba.com/index.php?callback=jQuery19006060045921437351_1551711862314&c=dailysentence&m=getTodaySentence&_=1551711862318';
 
