@@ -244,5 +244,5 @@ function getAllDataAndSendMail(){
     })
 }
 
-
+// 获取所有数据并且发送邮件
 getAllDataAndSendMail();
