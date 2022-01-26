@@ -1,2 +1,2 @@
 # SendLoveMail
-SendLoveMail - update 1
+SendLoveMail - update 2022-01-26
