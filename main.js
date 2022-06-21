@@ -1,4 +1,4 @@
-// update 2022-05-10
+// update 2022
 const superagent = require("superagent"); //发送网络请求获取DOM
 const cheerio = require("cheerio"); //能够像Jquery一样方便获取DOM节点
 const nodemailer = require("nodemailer"); //发送邮件的node插件
